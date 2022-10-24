@@ -56,13 +56,13 @@ def main():
         #     print(label['name'])
 
 
-        body = ("Hi -name-\n\nThank you for purchasing a ticket to Diya! Attached is your ticket to the event!"
+        body = ("Hi -name-\n\nThank you for purchasing a ticket to Diya! Attached is your ticket to the event! "
         "We will see you on November 5th at 9 pm!\n\n"
         "Thank you for purchasing and we hope you enjoy the event!\n"
         "Aroosh Kumar - President")
 
         message = create_message_with_attachment("kumararoosh@gmail.com", 
-        "vivekp@cs.washington.edu", "Your Diya Ticket", body, "frame.png")
+        "brendenpage@gmail.com", "Your Diya Ticket", body, "frame.png")
         send_message(service, "me", message)
 
     except HttpError as error:
